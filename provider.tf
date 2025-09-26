@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "latest-84s-remote-state-dev"
+    bucket = "cva-tf-remote-state-dev1"
     key    = "roboshop-dev-runner"
     region = "us-east-1"
     encrypt        = true
@@ -18,4 +18,5 @@ terraform {
 provider "aws" {
   # Configuration options
   region = "us-east-1"
+  profile = "default"
 }
